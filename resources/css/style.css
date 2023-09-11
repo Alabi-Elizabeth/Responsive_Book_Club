@@ -1,0 +1,216 @@
+/* Universal Styles */
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    position: relative;
+    top: 2.625rem; /* To offset for fixed header */
+}
+
+/*@media only screen and (max-width: 895px) {
+    .content {
+        top: 1.3125rem;
+    }
+} */  
+
+/* Header */
+header .head {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: baseline;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: #9370DB;
+}
+
+h2.liz {
+    font-family: 'Rubik Iso', cursive;
+    color:#ffffff;
+    font-style: italic;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined {
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li {
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 0.625rem;
+}
+
+.list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.list a:hover {
+    color: #FF00FF;
+}
+
+header .menu-toggle {
+   display: none; /* Hide by default on larger screens */
+   cursor: pointer;
+   padding: 0.3em 0.625rem;
+   width: auto;
+   background-color: #FF4500;
+   border-radius: 0.125rem;
+}
+
+header .bar {
+    width: 1.5625rem;
+    height: 0.1875rem;
+    background-color: #fff;
+    margin: 0.25rem 0;
+}
+
+/* Responsive styles to show/hide the menu based on screen width */
+@media only screen and (max-width: 768px) {
+    header .menu-toggle {
+        display: block; /* Show on smaller screens */
+    }
+
+    header .desktop {
+        display: none; /* Hide the menu on smaller screens */
+        list-style: none;
+        padding: 0;
+    }
+
+    .desktop.open {
+        display: block; /* Show the menu when the toggle is clicked */
+    }
+
+    /*header .head {
+        padding: .125rem 0;
+    }*/
+
+}
+
+/* Main Section */
+.content {
+    display: flex;
+    width: 100%;
+    background-color: #FFE4E1;
+}
+
+/* Club Section */
+.club {
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    color: #FF4500;
+    letter-spacing: 0.313rem;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+}
+
+button {
+    padding: 0.313rem;
+    border: 1px solid black;
+    border-radius: 0.313rem;
+    text-decoration: none;
+    box-shadow: 0 .313rem;
+    background-color: #ff6347;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    margin-top: 0.313rem;
+    color: black;
+    box-shadow: 0px 0px;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    color: #FF4500;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+/* Image Section */
+.image-container {
+    display: flex;
+    width: 50%;   
+}
+
+
+.time {
+flex: 1;
+   max-width: 100%;
+   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-container {
+        padding: 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #FFA500;
+    margin-top: 1.25rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+ 
+
+@media screen and (max-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+} 
